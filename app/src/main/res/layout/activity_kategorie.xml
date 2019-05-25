@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kategorie">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kategorie"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <Button
+        android:id="@+id/miasta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Miasto"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="161dp" />
+
+    <Button
+        android:id="@+id/rzecz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rzecz"
+        app:layout_constraintTop_toBottomOf="@+id/miasta"
+        tools:layout_editor_absoluteX="160dp" />
+
+    <Button
+        android:id="@+id/pilkarz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pilkarz"
+        app:layout_constraintTop_toBottomOf="@+id/rzecz"
+        tools:layout_editor_absoluteX="161dp" />
+
+    <Button
+        android:id="@+id/piosenkarz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Piosenkarz"
+        app:layout_constraintTop_toBottomOf="@+id/pilkarz"
+        tools:layout_editor_absoluteX="161dp" />
+
+    <Button
+        android:id="@+id/aktor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Aktor"
+        app:layout_constraintTop_toBottomOf="@+id/piosenkarz"
+        tools:layout_editor_absoluteX="176dp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Cofnij"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nazwa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/elementy"
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:visibility="invisible"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/nazwa"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/pokaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        android:text="Pokaz zawartosc"
+        app:layout_constraintTop_toBottomOf="@+id/nazwa"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/dodaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Dodaj"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/pokaz"
+        app:layout_constraintTop_toBottomOf="@+id/nazwa" />
+</android.support.constraint.ConstraintLayout>

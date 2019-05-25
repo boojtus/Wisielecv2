@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Wisielec</string>
+    <string name="rzecz">rzecz</string>
+    <string name="piosenkarz">piosenkarz</string>
+    <string name="pilkarz">pilkarz</string>
+    <string name="miasta">miasta</string>
+    <string name="aktor">aktor</string>
+</resources>
